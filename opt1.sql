@@ -1,0 +1,4 @@
+SELECT Combinaisons.ID
+FROM Combinaisons
+LEFT JOIN correspondance_combinaison_regle ON Combinaisons.ID = correspondance_combinaison_regle.CombinaisonID
+WHERE correspondance_combinaison_regle.CombinaisonID IS NULL;
